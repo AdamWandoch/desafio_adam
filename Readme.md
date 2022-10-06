@@ -1,1 +1,1 @@
-# Soluções de desafios fullstack junior
+# Soluções de desafios fullstack juniorna

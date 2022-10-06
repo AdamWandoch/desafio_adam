@@ -1,0 +1,1 @@
+# Soluções de desafios fullstack junior

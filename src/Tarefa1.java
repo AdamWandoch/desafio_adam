@@ -1,6 +1,7 @@
 package src;
 
 import java.util.Arrays;
+import java.util.EnumMap;
 
 public class Tarefa1 {
     public static void main(String[] args) {
@@ -9,10 +10,7 @@ public class Tarefa1 {
 //        instantiate and initialize newArray[] based on originalArray[] filtering where value IS NOT EQUAL to 4 using Java Arrays API,
         int[] newArray = Arrays.stream(originalArray).filter(value -> value != 4).toArray();
 //        in newArray[] replace values of 9 with 5,
-        for (int i = 0; i < newArray.length; i++) {
-            if (newArray[i] == 9) newArray[i] = 5;
-        }
-//        initialize sum variable and assign with the value of sum of items in newArray[]
+        newArray = Arrays.stream(newArray).map(number -> (number == 9 ? 5 : number)).toArray();//        initialize sum variable and assign with the value of sum of items in newArray[]
         int sum = Arrays.stream(newArray).sum();
 //        print originalArray[] to the screen,
         System.out.println("originalArray: ");
